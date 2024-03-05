@@ -15,8 +15,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
 @Composable
-fun HomeScreen(navHostController: NavHostController) {
 
+fun HomeScreen(navHostController: NavHostController) {
     Column(
         modifier = Modifier.fillMaxSize(), // widht n Hight match parent
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -30,9 +30,6 @@ fun HomeScreen(navHostController: NavHostController) {
         Button(onClick = { navHostController.navigate("second" + "/www.url.com/44") }) {
             Text(text = "Go to Second Screen")
         }
-
     }
-
-
 }
 

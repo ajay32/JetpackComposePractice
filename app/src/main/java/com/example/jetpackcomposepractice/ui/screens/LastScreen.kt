@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import com.example.jetpackcomposepractice.ui.screens.highmemorycheck.HighMemoryUsageComposable
 
 
 @Composable
@@ -21,6 +22,25 @@ fun LastScreen(navHostController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+        HighMemoryUsageComposable()
+
 
         Text(text = "Last Screen")
 
