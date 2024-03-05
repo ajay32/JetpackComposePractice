@@ -5,6 +5,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.navigation.NavController
 
 
 //1. How do you optimize memory usage in Jetpack Compose?
@@ -132,3 +133,39 @@ fun Counter() {
 //Drawer: A navigation drawer that slides in from the side, typically used for app navigation.
 //SnackBar: A temporary message that appears at the bottom of the screen.
 //Content: The main content area for the current screen's UI components.
+
+//==============================================
+
+
+//how to use composable with xml together ?
+//
+//<androidx.compose.ui.platform.ComposeView
+//android:id="@+id/compose_view"
+//android:layout_width="match_parent"
+//android:layout_height="wrap_content"/>
+//
+//// Find the ComposeView
+//val composeView = findViewById<ComposeView>(R.id.compose_view)
+//
+//// Set the Composable content
+//composeView.setContent {
+//    Greeting(name = "Android")
+//}
+//
+
+//====================
+//How to send data in jetpack compose to other scrren ?
+//
+//composable("secondScreen/{data}") { backStackEntry ->
+//    SecondScreen(backStackEntry.arguments?.getString("data"))
+//}
+//
+//@Composable
+//fun FirstScreen(navController: NavController) {
+//    Button(onClick = {
+//        navController.navigate("secondScreen/dataToSend")
+//    }) {
+//        Text("Go to Second Screen")
+//    }
+//}
+//
